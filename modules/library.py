@@ -1,8 +1,8 @@
-from modules.book import Book
-from modules.user import User
+
 
 class Library:
-    def __init__(self):
+    def __init__(self,library_name):
+        self.library_name = library_name
         self.books = {}
         self.users = {}
 
