@@ -7,8 +7,8 @@ class Book:
         self.author = author
         self.isbn = isbn
 
-    def book_info(self):
-        print(f"title:{self.title}, author:{self.author},"
+    def __str__(self):
+        return (f"title:{self.title}, author:{self.author},"
         f" isbn:{self.isbn}, is_available: {self.__is_available}")
 
     @property
