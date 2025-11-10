@@ -1,8 +1,7 @@
 
 
 class Library:
-    def __init__(self,library_name):
-        self.library_name = library_name
+    def __init__(self):
         self.books = {}
         self.users = {}
 
@@ -28,8 +27,8 @@ class Library:
     def list_available_books(self):
         list_books =  []
         for book in self.books:
-            if book.update_book_status:
-                list_books.append(book)
+            if self.books[book].update_book_status:
+                list_books.append(self.books[book])
         return list_books
 
     def search_book(self,title_or_author):
