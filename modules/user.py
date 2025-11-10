@@ -1,4 +1,4 @@
-
+from os import remove
 
 
 class User:
@@ -16,3 +16,8 @@ class User:
     @update_borrowed_books.setter
     def update_borrowed_books(self, book):
         self.__borrowed_books.append(book)
+
+    def remove_borrowed_books(self,book):
+        self.__borrowed_books.remove(book)
+
+
