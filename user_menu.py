@@ -26,21 +26,21 @@ class UserSystem:
 
             match user_input:
               case 1:
-                title = input("Please enter the book title")
-                author = input("Please enter the book author")
-                isbn = int(input("Please enter the book isbn"))
+                title = input("Please enter the book title ")
+                author = input("Please enter the book author ")
+                isbn = int(input("Please enter the book isbn "))
                 book = Book(title, author, isbn)
                 my_library.add_book(book)
 
               case 2:
-                name = input("Please enter user name")
-                user_id = int(input("PLease enter id"))
+                name = input("Please enter user name ")
+                user_id = int(input("PLease enter id "))
                 user = User(name, user_id)
                 my_library.add_user(user)
 
               case 3:
-                user_id = int(input("Please enter user id"))
-                book_isbn = int(input("Please enter book isbn"))
+                user_id = int(input("Please enter user id "))
+                book_isbn = int(input("Please enter book isbn "))
                 if my_library.borrow_book(user_id, book_isbn):
                     print("Book is available. Remember to return")
                 else:
