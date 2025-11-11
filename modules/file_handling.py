@@ -14,11 +14,3 @@ class FileHandling:
         with open(json_file) as j:
             python_data = json.load(j)
         return python_data
-
-f = FileHandling()
-f.writing_for_jason({"a":"A"},"tst_1.json")
-my_data = f.conversion_to_python("tst_1.json")
-print(my_data)
-
-
-
