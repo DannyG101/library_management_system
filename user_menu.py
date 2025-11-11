@@ -74,3 +74,6 @@ class UserSystem:
                   print("Thanks for visiting Library")
                   user_exit = True
 
+u = UserSystem()
+u.login_to_the_system()
+u.central_user_system()
